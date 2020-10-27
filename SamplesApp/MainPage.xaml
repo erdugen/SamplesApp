@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="SamplesApp.MainPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="Samples">
+	<ContentPage.Content>
+		<Grid
+			HorizontalOptions="CenterAndExpand"
+			VerticalOptions="CenterAndExpand">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="50" />
+			</Grid.RowDefinitions>
+
+			<Button
+				Grid.Row="0"
+				Clicked="ImagedListView_Clicked"
+				HorizontalOptions="Center"
+				Text="Imaged List View Sample"
+				VerticalOptions="Center" />
+
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

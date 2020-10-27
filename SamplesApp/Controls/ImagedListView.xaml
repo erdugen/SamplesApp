@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Grid
+	x:Class="SamplesApp.Controls.ImagedListView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Name="this">
+	<Image
+		Aspect="AspectFit"
+		HeightRequest="300"
+		HorizontalOptions="CenterAndExpand"
+		IsVisible="{Binding Path=ShowBackgroundImage, Source={x:Reference this}}"
+		Source="{Binding Path=BackgroundImage, Source={x:Reference this}}"
+		VerticalOptions="CenterAndExpand"
+		WidthRequest="300" />
+</Grid>
