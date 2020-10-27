@@ -9,8 +9,7 @@ You can use it as you wish. :)
 
 ## ImagedListView
 You can add pictures so that the screen is not blank when there is no recording in the background of the lists.
-You can examine the SamplesApp/SamplesApp/Controls/ImagedListView file.
-
+You can examine the [SamplesApp/SamplesApp/Controls/ImagedListView](https://github.com/erdugen/SamplesApp/tree/main/SamplesApp/Controls) file.
 
 <html>
 <p align="center">  
