@@ -9,7 +9,7 @@ Dilediğiniz gibi kullanabilirsiniz. :)
 
 ## ImagedListView
 Listelerin arka planında kayıt olmadığı zaman ekranın boş kalmaması için resim ekleyebilirsiniz.
-SamplesApp/SamplesApp/Controls/ImagedListView dosyasını inceleyebilirsiniz.
+[SamplesApp/SamplesApp/Controls/ImagedListView](https://github.com/erdugen/SamplesApp/tree/main/SamplesApp/Controls) dosyasını inceleyebilirsiniz.
 
 <html>
 <p align="center">  
