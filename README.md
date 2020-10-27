@@ -9,7 +9,7 @@ You can use it as you wish. :)
 
 ## ImagedListView
 You can add pictures so that the screen is not blank when there is no recording in the background of the lists.
-You can examine the [SamplesApp/SamplesApp/Controls/ImagedListView](ImagedListView.xaml.cs) file.
+You can examine the SamplesApp/SamplesApp/Controls/ImagedListView file.
 
 
 <html>
