@@ -2,7 +2,7 @@
 
 *Diğer dillerde okuyun: [English](README.md), [Turkish](README.tr.md)
 
-Xamarin üzrinde küçük denemeler
+Xamarin üzerinde küçük denemeler
 
 Xamarin üzerinde geliştirdiğim küçük denemeleri ve ipuçlarını içerir.
 Dilediğiniz gibi kullanabilirsiniz. :)
