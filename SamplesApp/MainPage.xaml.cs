@@ -13,5 +13,10 @@ namespace SamplesApp
         {
             await Navigation.PushAsync(new ImagesListViewPage());
         }
+
+        async void CustomNavigationBar_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new CustomNavigationBarPage());
+        }
     }
 }

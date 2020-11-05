@@ -10,6 +10,7 @@
 			VerticalOptions="CenterAndExpand">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="50" />
+				<RowDefinition Height="50" />
 			</Grid.RowDefinitions>
 
 			<Button
@@ -17,6 +18,13 @@
 				Clicked="ImagedListView_Clicked"
 				HorizontalOptions="Center"
 				Text="Imaged List View Sample"
+				VerticalOptions="Center" />
+
+			<Button
+				Grid.Row="1"
+				Clicked="CustomNavigationBar_Clicked"
+				HorizontalOptions="Center"
+				Text="Custom Navigation Bar"
 				VerticalOptions="Center" />
 
 		</Grid>

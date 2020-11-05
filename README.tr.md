@@ -16,3 +16,13 @@ Listelerin arka planında kayıt olmadığı zaman ekranın boş kalmaması içi
   <img src="https://media.giphy.com/media/Zk0FLyJSluplgUjmWa/giphy.gif">
 </p>
 </html>
+
+## PageNavigationView
+Navigation Bar üzerindeki özelleştirmeler size yetmediğinde bu kontrolü kullanabilirsiniz.
+[SamplesApp/SamplesApp/Controls/PageNavigationView](https://github.com/erdugen/SamplesApp/tree/main/SamplesApp/Controls) dosyasını inceleyebilirsiniz.
+
+<html>
+<p align="center">  
+  <img src="https://media.giphy.com/media/SfYn04JaOSUp34A5W7/giphy.gif">
+</p>
+</html>

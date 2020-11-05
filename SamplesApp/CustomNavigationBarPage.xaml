@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+	x:Class="SamplesApp.CustomNavigationBarPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:SamplesApp.Controls;assembly=SamplesApp"
+	xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+	x:Name="pp"
+	ios:Page.UseSafeArea="true">
+	<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<controls:PageNavigationView
+				x:Name="pageNav"
+				Grid.Row="0"
+				HeaderTitle="{Binding Source={x:Reference pp}, Path=Title}"
+				LeftButton="{Binding Source={x:Reference pp}, Path=LeftButton}"
+				RightButtons="{Binding Source={x:Reference pp}, Path=RightButtons}" />
+			<StackLayout
+				Grid.Row="1"
+				BackgroundColor="AntiqueWhite"
+				HorizontalOptions="FillAndExpand"
+				Orientation="Vertical"
+				VerticalOptions="FillAndExpand">
+				<Button
+					Clicked="AddRightButton_Clicked"
+					Text="Add Right Button"
+					VerticalOptions="CenterAndExpand" />
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

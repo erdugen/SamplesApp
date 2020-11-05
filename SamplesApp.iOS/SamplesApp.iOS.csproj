@@ -136,5 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\polar_bear.jpeg" />
+    <BundleResource Include="Resources\icons8-zoom-in-50.png" />
+    <BundleResource Include="Resources\icons8-plus-50.png" />
+    <BundleResource Include="Resources\icons8-minus-50.png" />
+    <BundleResource Include="Resources\icons8-back-50.png" />
   </ItemGroup>
 </Project>

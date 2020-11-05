@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+	x:Class="SamplesApp.Controls.PageNavigationView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Name="this"
+	Padding="0,-5,0,0"
+	HeightRequest="60">
+	<ContentView.Content>
+		<Grid
+			Padding="15,10,15,0"
+			BackgroundColor="White"
+			HorizontalOptions="FillAndExpand"
+			VerticalOptions="FillAndExpand">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+
+			<StackLayout
+				Grid.Column="0"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions="FillAndExpand"
+				WidthRequest="36">
+				<Image
+					Aspect="AspectFit"
+					HeightRequest="{Binding LeftButton.Height}"
+					HorizontalOptions="CenterAndExpand"
+					Source="{Binding Source={x:Reference this}, Path=LeftButton.ImageSource}"
+					VerticalOptions="CenterAndExpand"
+					WidthRequest="{Binding LeftButton.Width}" />
+				<StackLayout.GestureRecognizers>
+					<TapGestureRecognizer
+						Command="{Binding Source={x:Reference this}, Path=ReturnCommand}"
+						CommandParameter="{Binding Source={x:Reference this}, Path=LeftButton}" />
+				</StackLayout.GestureRecognizers>
+			</StackLayout>
+
+			<Label
+				x:Name="lblTitle"
+				Grid.Column="1"
+				FontSize="18"
+				HorizontalOptions="FillAndExpand"
+				HorizontalTextAlignment="Center"
+				LineBreakMode="TailTruncation"
+				MaxLines="1"
+				TextColor="Black"
+				VerticalOptions="FillAndExpand"
+				VerticalTextAlignment="Center" />
+
+			<StackLayout
+				x:Name="slRightButtons"
+				Grid.Column="2"
+				BindableLayout.ItemsSource="{Binding Source={x:Reference this}, Path=RightButtons}"
+				HeightRequest="36"
+				HorizontalOptions="FillAndExpand"
+				Orientation="Horizontal"
+				Spacing="0"
+				VerticalOptions="FillAndExpand">
+				<BindableLayout.ItemTemplate>
+					<DataTemplate>
+						<StackLayout
+							Padding="6,0,6,0"
+							HorizontalOptions="CenterAndExpand"
+							IsClippedToBounds="true"
+							VerticalOptions="CenterAndExpand">
+							<Image
+								x:Name="imgButton"
+								Aspect="AspectFit"
+								HeightRequest="{Binding Height}"
+								HorizontalOptions="Center"
+								Source="{Binding ImageSource}"
+								VerticalOptions="Center"
+								WidthRequest="{Binding Width}" />
+
+							<StackLayout.GestureRecognizers>
+								<TapGestureRecognizer
+									Command="{Binding Source={x:Reference this}, Path=ReturnCommand}"
+									CommandParameter="{Binding .}" />
+							</StackLayout.GestureRecognizers>
+						</StackLayout>
+					</DataTemplate>
+				</BindableLayout.ItemTemplate>
+			</StackLayout>
+		</Grid>
+	</ContentView.Content>
+</ContentView>
